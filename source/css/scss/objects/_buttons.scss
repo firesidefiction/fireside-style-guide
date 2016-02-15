@@ -3,16 +3,23 @@
 \*------------------------------------*/
 .btn {
 	display: inline-block;
-	background: $gray-dark;
+	background: $color__highlight;
 	color: $white;
 	line-height: 1;
 	font-weight: bold;
 	padding: $pad;
+	margin-top: $space;
+	margin-bottom: $space;
 	border: 0;
+	border-radius: $pad-quarter;
 	text-align: center;
+	//text-transform: uppercase;
+	font-weight: 300;
+	@include transition(background, 0.4s, ease-in-out);
 	
 	&:hover, &:focus {
-		background: $gray;
+		background: $color__highlight--focus;
+		border: 10px, $color__highlight--focus;
 		color: $white;
 	}
 
@@ -27,14 +34,17 @@
 }
 
 .btn-large {
-	padding: $pad-half;
 	text-transform: uppercase;
-	background: $gray;
 	font-size: 1.4rem;
-	font-weight: normal;
 }
 
 
 .text-btn {
 	font-style: italic;
+	color: $color__highlight;
+	@include transition(color, 0.4s, ease-in-out);
+	
+	&:hover, &:focus {
+		color: $color__highlight--focus;
+	}
 }

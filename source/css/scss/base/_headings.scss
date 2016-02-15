@@ -1,31 +1,34 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1, .alpha   { 
-	line-height: 1.2;
+h1   { 
+	line-height: 1.3;
+	font-weight: 100;
 }
 
-h2, .beta    { 
-	line-height: 1.2;
+h2    { 
+	line-height: 1.3;
+	font-weight: 300;
 }
 
-h3, .gamma   { 
+h3   { 
 	line-height: 1.2;
+	font-weight: 400;
 }
 
-h4, .delta   {
+h4   {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+h5 { 
 	
 }
 
-h5, .epsilon { 
-	
-}
-
-h6, .zeta    { 
+h6    { 
 	
 }
 
 /* Subheadings */
 .subheading {
-	font-family: $font-secondary;
 	font-weight: normal;
 }
