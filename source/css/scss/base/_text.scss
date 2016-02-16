@@ -1,6 +1,12 @@
 /* Text-Related Elements */ 
 p {
-	text-indent: $space*1.5;
+	margin-bottom: $space;
+}
+
+.story {
+    p {
+        text-indent: $space*1.5;
+    }
 }
 
 /* Blockquote */
@@ -17,7 +23,6 @@ aside {
     font-size: $font-size-large;
     font-weight: 300;
     line-height: 1.3;
-    color: $color__highlight;
 }
 
 /* Horizontal Rule */ 

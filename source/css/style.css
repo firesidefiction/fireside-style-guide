@@ -217,13 +217,18 @@ body {
 /* Links */
 /* line 2, scss/base/_links.scss */
 a {
-  color: #333;
+  color: #414141;
   text-decoration: none;
   outline: 0;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-/* line 7, scss/base/_links.scss */
+/* line 8, scss/base/_links.scss */
 a:hover, a:focus {
-  color: #808080;
+  color: #b40032;
 }
 
 /* Headings */
@@ -261,11 +266,16 @@ h4 {
 /* Text-Related Elements */
 /* line 2, scss/base/_text.scss */
 p {
+  margin-bottom: 1em;
+}
+
+/* line 7, scss/base/_text.scss */
+.story p {
   text-indent: 1.5em;
 }
 
 /* Blockquote */
-/* line 7, scss/base/_text.scss */
+/* line 13, scss/base/_text.scss */
 blockquote {
   font-style: italic;
   color: #808080;
@@ -275,28 +285,27 @@ blockquote {
   text-indent: none;
 }
 
-/* line 16, scss/base/_text.scss */
+/* line 22, scss/base/_text.scss */
 aside {
   font-size: 1.4375em;
   font-weight: 300;
   line-height: 1.3;
-  color: #b40032;
 }
 
 /* Horizontal Rule */
-/* line 24, scss/base/_text.scss */
+/* line 29, scss/base/_text.scss */
 hr {
   border: 0;
   height: 1px;
   background: #ddd;
   margin: 2em 0;
 }
-/* line 29, scss/base/_text.scss */
+/* line 34, scss/base/_text.scss */
 hr.solid {
   background: #808080;
 }
 
-/* line 34, scss/base/_text.scss */
+/* line 39, scss/base/_text.scss */
 abbr {
   border-bottom: 1px dotted #808080;
   cursor: help;
@@ -528,7 +537,7 @@ td {
 /* line 12, scss/base/_animation.scss */
 .animate-hover:hover {
   color: #fff;
-  background-color: #810024;
+  background-color: #b40032;
 }
 
 /* line 19, scss/base/_animation.scss */
@@ -552,12 +561,12 @@ td {
 
 /* line 9, scss/base/_styleguide.scss */
 .brand-color--highlight {
-  background: #b40032;
+  background: #810024;
 }
 
 /* line 13, scss/base/_styleguide.scss */
 .brand-color--highlight--focus {
-  background: #810024;
+  background: #b40032;
 }
 
 /*------------------------------------*\
@@ -1230,7 +1239,7 @@ td {
 /* line 4, scss/objects/_buttons.scss */
 .btn {
   display: inline-block;
-  background: #b40032;
+  background: #810024;
   color: #fff;
   line-height: 1;
   font-weight: bold;
@@ -1249,8 +1258,8 @@ td {
 }
 /* line 20, scss/objects/_buttons.scss */
 .btn:hover, .btn:focus {
-  background: #810024;
-  border: 10px, #810024;
+  background: #b40032;
+  border: 10px, #b40032;
   color: #fff;
 }
 /* line 26, scss/objects/_buttons.scss */
@@ -1273,7 +1282,7 @@ td {
 /* line 42, scss/objects/_buttons.scss */
 .text-btn {
   font-style: italic;
-  color: #b40032;
+  color: #810024;
   -webkit-transition: color 0.4s ease-in-out;
   -moz-transition: color 0.4s ease-in-out;
   -ms-transition: color 0.4s ease-in-out;
@@ -1282,7 +1291,7 @@ td {
 }
 /* line 47, scss/objects/_buttons.scss */
 .text-btn:hover, .text-btn:focus {
-  color: #810024;
+  color: #b40032;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */

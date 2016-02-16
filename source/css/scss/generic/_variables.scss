@@ -27,13 +27,14 @@ $color__dark-grey: #5a5a5a;
 $color__default: $color__dark-grey;
 
 // Fireside Red
-$color__fireside-red: #b40032;
+$color__fireside-red: #810024;
 
 // Set Site Specific Base, Highlight and Accent Colors Here for easy switching between themes
 $color__base: $color__default;
 $color__base--light: lighten($color__base, 20%);
+$color__base--dark: darken($color__base, 10%);
 $color__highlight: $color__fireside-red;
-$color__highlight--focus: darken($color__highlight, 10%);
+$color__highlight--focus: lighten($color__highlight, 10%);
 
 //Typography
 $font : "museo-slab", "museo slab", Georgia, Times, "Times New Roman", serif;
