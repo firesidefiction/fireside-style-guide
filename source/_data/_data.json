@@ -3,6 +3,18 @@
 	"htmlClass": "pl",
 	"bodyClass": "body",
 	"img": {
+		"illustration" : {
+			"src" : "../../images/fpo_illustration.svg",
+			"alt" : "Story Title Illustration by Galen Dara"
+		},
+		"book" : {
+			"src" : "../../images/fpo_book-cover.svg",
+			"alt" : "Book Title Cover"
+		},
+		"photo" : {
+			"src" : "../../images/fpo_avatar.svg",
+			"alt" : "Person Name"
+		},
 		"landscape-4x3": {
 			"src": "../../images/fpo_4x3.png",
 			"alt": "4x3 Image"
@@ -74,7 +86,8 @@
 	"seconds" : "31",
 	"author" : {
 		"first-name": "Author",
-		"last-name": "Name"
+		"last-name": "Name",
+		"url" : "#"
 	},
 	"hero": true,
 	"emergency" : false,

@@ -329,12 +329,13 @@ dl {
 
 /* line 13, scss/base/_lists.scss */
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* line 17, scss/base/_lists.scss */
 dd {
-  margin-left: 0;
+  margin-left: 1em;
+  margin-bottom: .5em;
 }
 
 /*------------------------------------*\
@@ -496,21 +497,57 @@ input[type="search"]::-webkit-search-decoration {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #808080;
+  border: 1px solid #5a5a5a;
   width: 100%;
 }
 
 /* line 10, scss/base/_tables.scss */
 th {
   text-align: left;
-  border: 1px solid #808080;
+  border: 1px solid #5a5a5a;
   padding: 0.2em;
 }
 
 /* line 15, scss/base/_tables.scss */
 td {
-  border: 1px solid #808080;
+  border: 1px solid #5a5a5a;
   padding: 0.2em;
+}
+
+/* line 20, scss/base/_tables.scss */
+.content-note {
+  font-size: 1.4375em;
+  font-weight: 100;
+  border: none;
+  width: auto;
+  margin: 0 auto;
+}
+/* line 26, scss/base/_tables.scss */
+.content-note h3 {
+  font-weight: 300;
+}
+/* line 29, scss/base/_tables.scss */
+.content-note td, .content-note th {
+  border: none;
+}
+/* line 32, scss/base/_tables.scss */
+.content-note .score {
+  text-align: right;
+  font-size: 1.4375em;
+  color: #810024;
+  line-height: 1.0625em;
+}
+
+/* line 40, scss/base/_tables.scss */
+.legend {
+  border: 1px solid #8d8d8d;
+  font-size: 0.75em;
+  font-weight: 400;
+  margin: 1.5em auto 2em;
+}
+/* line 45, scss/base/_tables.scss */
+.legend .score {
+  color: #5a5a5a;
 }
 
 /* line 1, scss/base/_animation.scss */
@@ -1065,172 +1102,46 @@ td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-/* Icon Font */
-@font-face {
-  font-family: 'icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
+/* line 1, scss/objects/_icons.scss */
+.icons {
+  display: flex;
+  justify-content: space-around;
 }
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 4, scss/objects/_icons.scss */
+.icons li {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+/* line 11, scss/objects/_icons.scss */
+.icon-twitter {
+  background-image: url("../images/logo_twitter.svg");
+  background-size: 50px;
+}
 /* line 15, scss/objects/_icons.scss */
-[data-icon]:before {
-  font-family: 'icons';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+.icon-twitter:hover {
+  background-image: url("../images/logo_twitter-hover.svg");
 }
 
+/* line 20, scss/objects/_icons.scss */
+.icon-medium {
+  background-image: url("../images/logo_medium.svg");
+  background-size: 50px;
+}
 /* line 24, scss/objects/_icons.scss */
-.icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple, .icon-android, .icon-arrow:after, .icon-envelope:before {
-  font-family: 'icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+.icon-medium:hover {
+  background-image: url("../images/logo_medium-hover.svg");
 }
 
-/* line 34, scss/objects/_icons.scss */
-.icon-twitter:before {
-  content: "\74";
+/* line 29, scss/objects/_icons.scss */
+.icon-patreon {
+  background-image: url("../images/logo_patreon.svg");
+  background-size: 45px;
 }
-
-/* line 37, scss/objects/_icons.scss */
-.icon-stumbleupon:before {
-  content: "\75";
-}
-
-/* line 40, scss/objects/_icons.scss */
-.icon-pinterest:before {
-  content: "\70";
-}
-
-/* line 43, scss/objects/_icons.scss */
-.icon-linkedin:before {
-  content: "\69";
-}
-
-/* line 46, scss/objects/_icons.scss */
-.icon-google-plus:before {
-  content: "\67";
-}
-
-/* line 49, scss/objects/_icons.scss */
-.icon-search:before {
-  content: "\73";
-}
-
-/* line 52, scss/objects/_icons.scss */
-.icon-play:before {
-  content: "\61";
-}
-
-/* line 55, scss/objects/_icons.scss */
-.icon-menu:before {
-  content: "\21";
-}
-
-/* line 58, scss/objects/_icons.scss */
-.icon-arrow-left:before {
-  content: "\23";
-}
-
-/* line 61, scss/objects/_icons.scss */
-.icon-arrow-right:before {
-  content: "\24";
-}
-
-/* line 64, scss/objects/_icons.scss */
-.icon-bubble:before {
-  content: "\25";
-}
-
-/* line 67, scss/objects/_icons.scss */
-.icon-facebook:before {
-  content: "\66";
-}
-
-/* line 70, scss/objects/_icons.scss */
-.icon-feed:before {
-  content: "\27";
-}
-
-/* line 73, scss/objects/_icons.scss */
-.icon-youtube:before {
-  content: "\79";
-}
-
-/* line 76, scss/objects/_icons.scss */
-.icon-tag:before {
-  content: "\28";
-}
-
-/* line 79, scss/objects/_icons.scss */
-.icon-tumblr:before {
-  content: "\6d";
-}
-
-/* line 82, scss/objects/_icons.scss */
-.icon-instagram:before {
-  content: "\22";
-}
-
-/* line 85, scss/objects/_icons.scss */
-.icon-podcast:before {
-  content: "\26";
-}
-
-/* line 88, scss/objects/_icons.scss */
-.icon-android:before {
-  content: "\29";
-}
-
-/* line 91, scss/objects/_icons.scss */
-.icon-apple:before {
-  content: "\2a";
-}
-
-/* line 94, scss/objects/_icons.scss */
-.icon-envelope:before {
-  content: "\2b";
-}
-
-/* line 99, scss/objects/_icons.scss */
-.icon-arrow:after {
-  content: "\61";
-  display: inline-block;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-/* line 109, scss/objects/_icons.scss */
-.icon-play:before {
-  font-size: 0.7rem;
-  padding-left: 0.2em;
-}
-
-/* line 114, scss/objects/_icons.scss */
-.icon-play-box {
-  display: block;
-  margin-left: 2em;
-}
-
-/* line 119, scss/objects/_icons.scss */
-.icon-play-box:before {
-  padding: 0.25em;
-  background: #808080;
-  color: #fff;
-  margin-left: -1.7rem;
-  margin-right: 0.5em;
+/* line 33, scss/objects/_icons.scss */
+.icon-patreon:hover {
+  background-image: url("../images/logo_patreon-hover.svg");
 }
 
 /*------------------------------------*\
@@ -1637,8 +1548,8 @@ td {
 
 /* line 8, scss/objects/_article.scss */
 .byline {
-  font-size: 0.875em;
-  font-style: italic;
+  font-size: 1.4375em;
+  font-weight: 300;
   margin-bottom: 0.5em;
 }
 
