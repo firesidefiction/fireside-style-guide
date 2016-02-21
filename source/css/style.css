@@ -593,7 +593,7 @@ td {
 \*------------------------------------*/
 /* Layout Container */
 /* line 6, scss/objects/_layout.scss */
-.lc, .header, [role=main] {
+.lc, [role=main] {
   max-width: 72em;
   margin: 0 auto;
   padding: 0.5em;
@@ -871,11 +871,10 @@ td {
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
-/* line 1, scss/objects/_header.scss */
-.header {
-  background: #fff;
-  padding: 0;
-  border-bottom: 1px solid #dbdbdb;
+/* line 2, scss/objects/_header.scss */
+header h1 {
+  text-align: center;
+  margin: 1em;
 }
 
 /* line 8, scss/objects/_header.scss */
@@ -1077,45 +1076,17 @@ td {
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
-/* line 4, scss/objects/_footer.scss */
-.footer {
-  clear: both;
-  overflow: hidden;
-  background: #131313;
-  color: #fff;
-  line-height: 1.2;
-}
-/* line 11, scss/objects/_footer.scss */
-.footer a {
-  color: #f9f9f9;
-}
-
-/* line 17, scss/objects/_footer.scss */
-.nav-footer {
-  margin: -1em -1em 1em;
-}
-/* line 20, scss/objects/_footer.scss */
-.nav-footer li {
-  border-bottom: 1px solid #333;
-}
-@media all and (min-width: 46.8em) {
-  /* line 20, scss/objects/_footer.scss */
-  .nav-footer li {
-    border: 0;
-    float: left;
-  }
-}
-/* line 29, scss/objects/_footer.scss */
-.nav-footer a {
-  display: block;
+/* line 5, scss/objects/_footer.scss */
+footer {
+  border-top: 1px solid #8d8d8d;
   padding: 1em;
 }
 
-@media all and (min-width: 46.8em) {
-  /* line 35, scss/objects/_footer.scss */
-  .copyright {
-    float: right;
-  }
+/* line 10, scss/objects/_footer.scss */
+.copyright {
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 1em;
 }
 
 /*------------------------------------*\

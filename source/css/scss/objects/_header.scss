@@ -1,8 +1,8 @@
-.header {
-	background: $white;
-	padding: 0;
-	border-bottom: 1px solid #dbdbdb;
-	@extend .lc;
+header {
+	h1 {
+		text-align: center;
+		margin: $space;
+	}
 }
 
 .logo {
