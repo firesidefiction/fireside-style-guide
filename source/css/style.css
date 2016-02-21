@@ -440,34 +440,13 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 1em;
 }
 
-/* line 65, scss/base/_forms.scss */
-.inline-form fieldset, .inline-form .inline-container {
-  position: relative;
-}
-/* line 69, scss/base/_forms.scss */
-.inline-form input[type=submit], .inline-form button, .inline-form .btn {
-  font-size: 0.875em;
-  padding: 0.65rem 1.3rem;
-  background: #333;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: auto;
-}
-/* line 79, scss/base/_forms.scss */
-.inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus, .inline-form .btn:hover, .inline-form .btn:focus {
-  background: #808080;
-  color: #fff;
-}
-
 /* Validation */
-/* line 87, scss/base/_forms.scss */
+/* line 86, scss/base/_forms.scss */
 .has-error {
   border-color: #f00;
 }
 
-/* line 90, scss/base/_forms.scss */
+/* line 89, scss/base/_forms.scss */
 .is-valid {
   border-color: #089e00;
 }
@@ -476,12 +455,12 @@ input[type="search"]::-webkit-search-decoration {
     $SPECIFIC FORMS
 \*------------------------------------*/
 /* Search Form */
-/* line 102, scss/base/_forms.scss */
+/* line 101, scss/base/_forms.scss */
 .search-field {
   padding-right: 3em;
 }
 
-/* line 105, scss/base/_forms.scss */
+/* line 104, scss/base/_forms.scss */
 .inline-form .search-submit {
   background: none;
   padding: 0.78em 1em;
@@ -954,51 +933,81 @@ td {
 \*------------------------------------*/
 /* line 5, scss/objects/_nav.scss */
 .nav {
-  clear: both;
-  overflow: hidden;
-  max-height: 0;
+  display: flex;
+  justify-content: center;
+  max-width: 35em;
+  margin: 0 auto;
 }
-/* line 10, scss/objects/_nav.scss */
+/* line 11, scss/objects/_nav.scss */
+.nav li {
+  flex: 1;
+  text-align: center;
+  padding-top: 1em;
+}
+/* line 17, scss/objects/_nav.scss */
 .nav a {
-  display: block;
-  padding: 1em;
-  border-top: 1px solid #eee;
+  padding: 0.25em;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #810024;
 }
-/* line 16, scss/objects/_nav.scss */
-.nav.active {
-  max-height: 40em;
+/* line 22, scss/objects/_nav.scss */
+.nav a:hover {
+  color: #b40032;
 }
-@media all and (min-width: 46.8em) {
-  /* line 5, scss/objects/_nav.scss */
-  .nav {
-    max-height: none;
-    float: right;
-    clear: none;
+
+/* line 42, scss/objects/_nav.scss */
+#masthead a {
+  padding: 0;
+}
+/* line 45, scss/objects/_nav.scss */
+#masthead #logo-badge {
+  width: 4em;
+}
+@media all and (min-width: 29.75em) {
+  /* line 45, scss/objects/_nav.scss */
+  #masthead #logo-badge {
+    display: none;
   }
-  /* line 25, scss/objects/_nav.scss */
-  .nav li {
-    float: left;
+}
+/* line 51, scss/objects/_nav.scss */
+#masthead #logo-magazine {
+  width: 12em;
+  display: none;
+}
+@media all and (min-width: 29.75em) {
+  /* line 51, scss/objects/_nav.scss */
+  #masthead #logo-magazine {
+    display: inline;
+    top: 0;
   }
-  /* line 29, scss/objects/_nav.scss */
-  .nav a {
-    border: 0;
+}
+@media all and (min-width: 29.75em) {
+  /* line 41, scss/objects/_nav.scss */
+  #masthead {
+    padding-top: 0;
   }
 }
 
-/* line 37, scss/objects/_nav.scss */
+/* line 64, scss/objects/_nav.scss */
+#logo-badge-footer {
+  width: 4em;
+}
+
+/* line 69, scss/objects/_nav.scss */
 .pagination {
   overflow: hidden;
 }
-/* line 40, scss/objects/_nav.scss */
+/* line 72, scss/objects/_nav.scss */
 .pagination li {
   float: left;
   border-right: 1px solid #eee;
 }
-/* line 44, scss/objects/_nav.scss */
+/* line 76, scss/objects/_nav.scss */
 .pagination li:last-child {
   border: 0;
 }
-/* line 49, scss/objects/_nav.scss */
+/* line 81, scss/objects/_nav.scss */
 .pagination a {
   padding: 1em;
 }

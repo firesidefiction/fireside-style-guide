@@ -63,22 +63,21 @@ input[type="search"]::-webkit-search-decoration {
 
 .inline-form {
 	fieldset, .inline-container {
-		position: relative;
 	}
 	
-	input[type=submit], button, .btn {
-		font-size: $font-size-small-2;
-		padding: 0.65rem 1.3rem;
-		background: $gray-dark;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 1;
-		width: auto;
+	input[type=submit], {
+		//font-size: $font-size-small-2;
+		//padding: 0.65rem 1.3rem;
+		//background: $gray-dark;
+		//position: absolute;
+		//top: 0;
+		//right: 0;
+		//z-index: 1;
+		//width: auto;
 
 		&:hover, &:focus {
-			background: $gray;
-			color: $white;
+			//background: $gray;
+			//color: $white;
 		}
 	}
 }
