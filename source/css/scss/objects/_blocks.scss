@@ -7,6 +7,29 @@
 	border-bottom: 1px solid $gray-light-2;
 }
 
+/* Author bio */
+.author-bio {
+	.thumb, h1 {
+		text-align: center;
+		@media all and (min-width: $bp-small-2) {
+			text-align: left;
+		}
+	}
+	.thumb {
+		margin-bottom: $space;
+	}
+	@media all and (min-width: $bp-small-2) {
+		display: flex;
+		justify-content: space-between;
+		div {
+			margin: $space;
+		}
+		.thumb {
+			min-width: 30%;
+		}
+	}
+}
+
 /* Block */
 .block {
 	overflow: hidden;
