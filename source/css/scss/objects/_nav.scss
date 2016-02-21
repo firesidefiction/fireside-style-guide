@@ -105,6 +105,9 @@
 			&:hover {
 				border-bottom: 1px solid $color__highlight--focus;
 			}
+			@media all and (min-width: $bp-med) {
+				padding: $pad;
+			}
 		}
 	}
 	@media all and (min-width: $bp-med) {
