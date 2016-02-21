@@ -997,19 +997,66 @@ td {
 /* line 69, scss/objects/_nav.scss */
 .pagination {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
-/* line 72, scss/objects/_nav.scss */
+/* line 74, scss/objects/_nav.scss */
 .pagination li {
-  float: left;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #dadada;
+  font-weight: 100;
 }
-/* line 76, scss/objects/_nav.scss */
+/* line 77, scss/objects/_nav.scss */
 .pagination li:last-child {
   border: 0;
 }
 /* line 81, scss/objects/_nav.scss */
 .pagination a {
   padding: 1em;
+  color: #810024;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 85, scss/objects/_nav.scss */
+.pagination a:hover {
+  color: #b40032;
+}
+/* line 89, scss/objects/_nav.scss */
+.pagination .current a {
+  color: #8d8d8d;
+}
+
+/* line 96, scss/objects/_nav.scss */
+.sidenav {
+  max-width: 20em;
+  margin: 0 auto;
+}
+/* line 99, scss/objects/_nav.scss */
+.sidenav ul {
+  padding: 0 0 0 1em;
+}
+/* line 101, scss/objects/_nav.scss */
+.sidenav ul li {
+  padding: 0.5em;
+  border-bottom: 1px solid #dadada;
+  -webkit-transition: border-bottom 0.3s ease;
+  -moz-transition: border-bottom 0.3s ease;
+  -ms-transition: border-bottom 0.3s ease;
+  -o-transition: border-bottom 0.3s ease;
+  transition: border-bottom 0.3s ease;
+}
+/* line 105, scss/objects/_nav.scss */
+.sidenav ul li:hover {
+  border-bottom: 1px solid #b40032;
+}
+@media all and (min-width: 46.8em) {
+  /* line 96, scss/objects/_nav.scss */
+  .sidenav {
+    max-width: 15em;
+    margin: 0;
+  }
 }
 
 /*------------------------------------*\
