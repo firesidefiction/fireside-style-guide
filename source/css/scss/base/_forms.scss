@@ -63,8 +63,9 @@ input[type="search"]::-webkit-search-decoration {
 
 .inline-form {
 	fieldset, .inline-container {
+		//display: flex; FIXME 
 	}
-	
+
 	input[type=submit], {
 		//font-size: $font-size-small-2;
 		//padding: 0.65rem 1.3rem;

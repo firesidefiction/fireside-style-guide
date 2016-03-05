@@ -2,13 +2,28 @@
     $FOOTER
 \*------------------------------------*/
 //Footer Nav
-footer {
-	border-top: 1px solid $color__base--light;
-	padding: $pad;
+footer, .footer {
+	padding: $pad $pad $pad-double $pad;
+	background-color: $color__highlight;
+	color: $white;
+	a {
+		color: $white;
+	}
 }
 
-.copyright {
+.footer-marketing {
+	max-width: 60em;
+	margin: 0 auto;
+	@media all and (min-width: $bp-small-3) {
+		display: flex;
+	}
+	div, form {
+		padding: 0 $pad-half;
+	}
+}
+
+.legal {
 	text-align: center;
 	font-size: $font-size-small;
-	margin-top: $space;
+	margin-top: $space-double;
 }

@@ -16,7 +16,7 @@
 	//text-transform: uppercase;
 	font-weight: 300;
 	@include transition(background, 0.4s, ease-in-out);
-	
+
 	&:hover, &:focus {
 		background: $color__highlight--focus;
 		border: 10px, $color__highlight--focus;
@@ -43,8 +43,20 @@
 	font-style: italic;
 	color: $color__highlight;
 	@include transition(color, 0.4s, ease-in-out);
-	
+
 	&:hover, &:focus {
 		color: $color__highlight--focus;
+	}
+}
+
+.reverse {
+	display: inline-block;
+	background: $white;
+	color: $color__highlight;
+	border: 1px solid $color__highlight;
+	&:hover, &:focus {
+		background: $color__highlight--focus;
+		border: 1px solid $white;
+		color: $white;
 	}
 }

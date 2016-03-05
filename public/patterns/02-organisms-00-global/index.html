@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1457202305" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1457210374" media="all" />
 
 		<script src="https://use.typekit.net/mwl8huf.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1457202305" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1457202305" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1457210374" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1457210374" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -334,7 +334,28 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-00-global-02-footer/02-organisms-00-global-02-footer.html" class="patternLink" data-patternpartial="organisms-footer">Footer</a></h2>
 						<div class="sg-pattern-body">
 							<!-- Begin Footer -->
-<footer>
+<footer class="footer">
+	<div class="footer-marketing">
+		<div class="sponsor-callout">
+			<div>
+				<h1>Thanks to our Sponsors</h1>
+				<p>We couldn’t bring you stories like this every month without the support of our subscribers and Patreon backers. We’d especially like to thank these backers for their generosity:</p>
+				<h3><a href="#">Sponsor Name</a></h3> <p>A short description of the sponsor.</p>
+				<p>If you want to help us keep publishing great stories and paying writers well, please consider <a href="https://www.patreon.com/firesidefiction?ty=h">supporting us on Patreon</a>.
+			</div>
+		</div>
+		<form action="#" method="post" class="inline-form newsletter-form">
+		    <fieldset>
+			    <label for="newsletter-scope"><h1>Sign up for our newsletter</h1></label>
+			    <p>Get notifications whenever we publish a new issue, and all the latest news about our books. Also @talkwordy may or may not send you cheesy poems.<br/><small>Rest assured: we'll never ever sell or give out your email address. We wouldn't do you like that—pinky promise.</small></p>
+			    <div class="inline-container">
+			   		<input type="newsletter" placeholder="E-mail address" id="newsletter-field" class="newsletter-field" />
+			    	<button class="btn reverse">Sign Me Up</button>
+				  </div>
+		    </fieldset>
+		</form>
+	</div>
+	<hr/>
 	<ul class="nav">
 		<li><a href="#">Books</a></li>
 		<li><a href="#">
@@ -357,20 +378,47 @@
 			</svg>
 		</a></li>
 		<li><a href="#">About Us</a></li>
-	</ul>		<p class="copyright">&copy; 2016 Fireside Ficiton Company. All rights reserved.</p>
+	</ul>
+	<div class="legal">
+		<p>&copy; 2016 Fireside Fiction Company. All rights reserved.<br/><a href="#FIXME">Terms of Service</a> • <a href="#FIXME">Privacy Policy</a></p>
+	</div>
 	<!-- FIXME ADD ANALYTICS CODE HERE -->
 </footer>
 <!-- End Footer -->
+
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
+											<a href="../../patterns/01-molecules-02-blocks-03-sponsor-callout/01-molecules-02-blocks-03-sponsor-callout.html"><code>molecules-sponsor-callout</code></a>
+											<a href="../../patterns/01-molecules-04-forms-02-newsletter/01-molecules-04-forms-02-newsletter.html"><code>molecules-newsletter</code></a>
 											<a href="../../patterns/01-molecules-05-navigation-01-footer-nav/01-molecules-05-navigation-01-footer-nav.html"><code>molecules-footer-nav</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;!-- Begin Footer --&gt;
-&lt;footer&gt;
+&lt;footer class=&quot;footer&quot;&gt;
+	&lt;div class=&quot;footer-marketing&quot;&gt;
+		&lt;div class=&quot;sponsor-callout&quot;&gt;
+			&lt;div&gt;
+				&lt;h1&gt;Thanks to our Sponsors&lt;/h1&gt;
+				&lt;p&gt;We couldn&rsquo;t bring you stories like this every month without the support of our subscribers and Patreon backers. We&rsquo;d especially like to thank these backers for their generosity:&lt;/p&gt;
+				&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Sponsor Name&lt;/a&gt;&lt;/h3&gt; &lt;p&gt;A short description of the sponsor.&lt;/p&gt;
+				&lt;p&gt;If you want to help us keep publishing great stories and paying writers well, please consider &lt;a href=&quot;https://www.patreon.com/firesidefiction?ty=h&quot;&gt;supporting us on Patreon&lt;/a&gt;.
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form newsletter-form&quot;&gt;
+		    &lt;fieldset&gt;
+			    &lt;label for=&quot;newsletter-scope&quot;&gt;&lt;h1&gt;Sign up for our newsletter&lt;/h1&gt;&lt;/label&gt;
+			    &lt;p&gt;Get notifications whenever we publish a new issue, and all the latest news about our books. Also @talkwordy may or may not send you cheesy poems.&lt;br/&gt;&lt;small&gt;Rest assured: we'll never ever sell or give out your email address. We wouldn't do you like that&mdash;pinky promise.&lt;/small&gt;&lt;/p&gt;
+			    &lt;div class=&quot;inline-container&quot;&gt;
+			   		&lt;input type=&quot;newsletter&quot; placeholder=&quot;E-mail address&quot; id=&quot;newsletter-field&quot; class=&quot;newsletter-field&quot; /&gt;
+			    	&lt;button class=&quot;btn reverse&quot;&gt;Sign Me Up&lt;/button&gt;
+				  &lt;/div&gt;
+		    &lt;/fieldset&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	&lt;hr/&gt;
 	&lt;ul class=&quot;nav&quot;&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Books&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;
@@ -393,10 +441,14 @@
 			&lt;/svg&gt;
 		&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;		&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2016 Fireside Ficiton Company. All rights reserved.&lt;/p&gt;
+	&lt;/ul&gt;
+	&lt;div class=&quot;legal&quot;&gt;
+		&lt;p&gt;&amp;copy; 2016 Fireside Fiction Company. All rights reserved.&lt;br/&gt;&lt;a href=&quot;#FIXME&quot;&gt;Terms of Service&lt;/a&gt; &bull; &lt;a href=&quot;#FIXME&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
+	&lt;/div&gt;
 	&lt;!-- FIXME ADD ANALYTICS CODE HERE --&gt;
 &lt;/footer&gt;
 &lt;!-- End Footer --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -447,10 +499,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1457202305">
+	<script id="pl-js-polyfill-insert-1457210374">
 		(function() {
 			if (self != top) {
-				var cb = '1457202305';
+				var cb = '1457210374';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -459,10 +511,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1457202305">
+	<script id="pl-js-insert-1457210374">
 		(function() {
 			if (self != top) {
-				var cb = '1457202305';
+				var cb = '1457210374';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
