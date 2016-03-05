@@ -99,6 +99,11 @@
 		"last-name": "Name",
 		"url" : "#"
 	},
+	"sponsor" : {
+		"name": "Sponsor Name",
+		"copy": "A short description of the sponsor.",
+		"url" : "#"
+	},
 	"hero": true,
 	"emergency" : false,
 	"touts" : [
