@@ -4,6 +4,7 @@
 //Footer Nav
 footer, .footer {
 	padding: $pad $pad $pad-double $pad;
+	margin-top: $space-quad;
 	background-color: $color__highlight;
 	color: $white;
 	a {

@@ -1079,31 +1079,32 @@ header h1 {
 /* line 5, scss/objects/_footer.scss */
 footer, .footer {
   padding: 1em 1em 2em 1em;
+  margin-top: 4em;
   background-color: #810024;
   color: #fff;
 }
-/* line 9, scss/objects/_footer.scss */
+/* line 10, scss/objects/_footer.scss */
 footer a, .footer a {
   color: #fff;
 }
 
-/* line 14, scss/objects/_footer.scss */
+/* line 15, scss/objects/_footer.scss */
 .footer-marketing {
   max-width: 60em;
   margin: 0 auto;
 }
 @media all and (min-width: 39.8em) {
-  /* line 14, scss/objects/_footer.scss */
+  /* line 15, scss/objects/_footer.scss */
   .footer-marketing {
     display: flex;
   }
 }
-/* line 20, scss/objects/_footer.scss */
+/* line 21, scss/objects/_footer.scss */
 .footer-marketing div, .footer-marketing form {
   padding: 0 0.5em;
 }
 
-/* line 25, scss/objects/_footer.scss */
+/* line 26, scss/objects/_footer.scss */
 .legal {
   text-align: center;
   font-size: 0.75em;
@@ -1287,7 +1288,7 @@ footer a, .footer a {
 /* line 11, scss/objects/_blocks.scss */
 .issue {
   max-width: 60em;
-  margin: 0 auto;
+  margin: 4em auto;
 }
 
 /* line 16, scss/objects/_blocks.scss */
