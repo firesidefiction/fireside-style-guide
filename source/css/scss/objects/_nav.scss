@@ -13,7 +13,7 @@
 		text-align: center;
 		padding-top: 1em;
 	}
-	
+
 	a {
 		padding: $pad-quarter;
 		text-transform: uppercase;
@@ -34,7 +34,7 @@
 
 		a {
 		}
-		
+
 	}
 }
 
@@ -113,5 +113,15 @@
 	@media all and (min-width: $bp-med) {
 		max-width: 15em;
 		margin: 0;
+	}
+}
+
+.back-to-top {
+	text-align: right;
+	a {
+		color: $color__highlight;
+		&:hover {
+			color: $color__highlight--focus;
+		}
 	}
 }

@@ -101,6 +101,20 @@
 	}
 }
 
+/* about us */
+.about-us {
+	max-width: 55em;
+	margin: $space auto;
+	@media all and (min-width: $bp-med) {
+		display: flex;
+	}
+	article {
+		max-width: 36em;
+		padding: $pad;
+		margin: 0 $space-double;
+	}
+}
+
 /* Block */
 .block {
 	overflow: hidden;
