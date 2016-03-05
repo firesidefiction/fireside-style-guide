@@ -7,6 +7,77 @@
 	border-bottom: 1px solid $gray-light-2;
 }
 
+/* Homepage Modules */
+.issue {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.issue-content {
+	margin-top: $space;
+	@media all and (min-width: $bp-small-3) {
+		display: flex;
+	}
+}
+
+.issue-title {
+	padding-left: $pad-half;
+	a {
+		color: $color__highlight;
+		&:hover {
+			color: $color__highlight--focus;
+		}
+	}
+}
+
+.featured-story-module {
+	color: $white;
+	background: $color__fireside-red;
+	padding: $pad;
+	a {
+		color: $white;
+	}
+	h4 {
+		font-size: .8em;
+	}
+	h1 {
+		font-size: 1.8em;
+	}
+	.byline {
+		font-size: 1.2em;
+		margin-top: $space-quarter;
+		margin-bottom: $space-quarter;
+	}
+}
+
+.story-module {
+	padding: $pad $pad 0 $pad;
+	h4 {
+		font-size: .8em;
+	}
+	h1 {
+		font-size: 1.4em;
+		font-weight: 300;
+		a {
+			color: $color__highlight;
+			&:hover {
+				color: $color__highlight--focus;
+			}
+		}
+	}
+	.byline {
+		font-size: 1.2em;
+		margin-top: $space-quarter;
+		margin-bottom: $space-quarter;
+	}
+	p {
+		line-height: 1.3em;
+	}
+	hr {
+		margin: 0;
+	}
+}
+
 /* Author bio */
 .author-bio {
 	.thumb, h1 {

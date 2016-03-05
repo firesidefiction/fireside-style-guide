@@ -1283,67 +1283,159 @@ footer a, .footer a {
   border-bottom: 1px solid #eee;
 }
 
+/* Homepage Modules */
+/* line 11, scss/objects/_blocks.scss */
+.issue {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+/* line 16, scss/objects/_blocks.scss */
+.issue-content {
+  margin-top: 1em;
+}
+@media all and (min-width: 39.8em) {
+  /* line 16, scss/objects/_blocks.scss */
+  .issue-content {
+    display: flex;
+  }
+}
+
+/* line 23, scss/objects/_blocks.scss */
+.issue-title {
+  padding-left: 0.5em;
+}
+/* line 25, scss/objects/_blocks.scss */
+.issue-title a {
+  color: #810024;
+}
+/* line 27, scss/objects/_blocks.scss */
+.issue-title a:hover {
+  color: #b40032;
+}
+
+/* line 33, scss/objects/_blocks.scss */
+.featured-story-module {
+  color: #fff;
+  background: #810024;
+  padding: 1em;
+}
+/* line 37, scss/objects/_blocks.scss */
+.featured-story-module a {
+  color: #fff;
+}
+/* line 40, scss/objects/_blocks.scss */
+.featured-story-module h4 {
+  font-size: .8em;
+}
+/* line 43, scss/objects/_blocks.scss */
+.featured-story-module h1 {
+  font-size: 1.8em;
+}
+/* line 46, scss/objects/_blocks.scss */
+.featured-story-module .byline {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* line 53, scss/objects/_blocks.scss */
+.story-module {
+  padding: 1em 1em 0 1em;
+}
+/* line 55, scss/objects/_blocks.scss */
+.story-module h4 {
+  font-size: .8em;
+}
+/* line 58, scss/objects/_blocks.scss */
+.story-module h1 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+/* line 61, scss/objects/_blocks.scss */
+.story-module h1 a {
+  color: #810024;
+}
+/* line 63, scss/objects/_blocks.scss */
+.story-module h1 a:hover {
+  color: #b40032;
+}
+/* line 68, scss/objects/_blocks.scss */
+.story-module .byline {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+/* line 73, scss/objects/_blocks.scss */
+.story-module p {
+  line-height: 1.3em;
+}
+/* line 76, scss/objects/_blocks.scss */
+.story-module hr {
+  margin: 0;
+}
+
 /* Author bio */
-/* line 12, scss/objects/_blocks.scss */
+/* line 83, scss/objects/_blocks.scss */
 .author-bio .thumb, .author-bio h1 {
   text-align: center;
 }
 @media all and (min-width: 29.75em) {
-  /* line 12, scss/objects/_blocks.scss */
+  /* line 83, scss/objects/_blocks.scss */
   .author-bio .thumb, .author-bio h1 {
     text-align: left;
   }
 }
-/* line 18, scss/objects/_blocks.scss */
+/* line 89, scss/objects/_blocks.scss */
 .author-bio .thumb {
   margin-bottom: 1em;
 }
 @media all and (min-width: 29.75em) {
-  /* line 11, scss/objects/_blocks.scss */
+  /* line 82, scss/objects/_blocks.scss */
   .author-bio {
     display: flex;
     justify-content: space-between;
   }
-  /* line 24, scss/objects/_blocks.scss */
+  /* line 95, scss/objects/_blocks.scss */
   .author-bio div {
     margin: 1em;
   }
-  /* line 27, scss/objects/_blocks.scss */
+  /* line 98, scss/objects/_blocks.scss */
   .author-bio .thumb {
     min-width: 30%;
   }
 }
 
 /* Block */
-/* line 34, scss/objects/_blocks.scss */
+/* line 105, scss/objects/_blocks.scss */
 .block {
   overflow: hidden;
 }
-/* line 37, scss/objects/_blocks.scss */
+/* line 108, scss/objects/_blocks.scss */
 .block p:last-child {
   margin-bottom: 0;
 }
 
-/* line 42, scss/objects/_blocks.scss */
+/* line 113, scss/objects/_blocks.scss */
 .headline {
   line-height: 1.2;
 }
 
 /* Hero Block */
-/* line 47, scss/objects/_blocks.scss */
+/* line 118, scss/objects/_blocks.scss */
 .block-hero {
   margin-bottom: 0.5em;
 }
-/* line 51, scss/objects/_blocks.scss */
+/* line 122, scss/objects/_blocks.scss */
 .block-hero .b-thumb img {
   display: block;
 }
 @media all and (min-width: 50em) {
-  /* line 47, scss/objects/_blocks.scss */
+  /* line 118, scss/objects/_blocks.scss */
   .block-hero {
     position: relative;
   }
-  /* line 59, scss/objects/_blocks.scss */
+  /* line 130, scss/objects/_blocks.scss */
   .block-hero .b-text {
     position: absolute;
     bottom: 0;
@@ -1356,27 +1448,27 @@ footer a, .footer a {
 }
 
 /* Block Thumbnail with Headline */
-/* line 72, scss/objects/_blocks.scss */
+/* line 143, scss/objects/_blocks.scss */
 .block-thumb {
   display: table;
   width: 100%;
   border-collapse: collapse;
 }
-/* line 77, scss/objects/_blocks.scss */
+/* line 148, scss/objects/_blocks.scss */
 .block-thumb .b-inner {
   display: table-row;
   vertical-align: top;
   overflow: hidden;
 }
 @media all and (min-width: 29.75em) {
-  /* line 83, scss/objects/_blocks.scss */
+  /* line 154, scss/objects/_blocks.scss */
   .block-thumb .b-thumb {
     display: table-cell;
     vertical-align: top;
     width: 30%;
     max-width: 10em;
   }
-  /* line 90, scss/objects/_blocks.scss */
+  /* line 161, scss/objects/_blocks.scss */
   .block-thumb .b-thumb img {
     display: block;
     width: 100%;
@@ -1384,7 +1476,7 @@ footer a, .footer a {
   }
 }
 @media all and (min-width: 29.75em) {
-  /* line 98, scss/objects/_blocks.scss */
+  /* line 169, scss/objects/_blocks.scss */
   .block-thumb .b-text {
     display: table-cell;
     width: 70%;
@@ -1393,38 +1485,38 @@ footer a, .footer a {
 }
 
 /* Block Headline Summary */
-/* line 110, scss/objects/_blocks.scss */
+/* line 181, scss/objects/_blocks.scss */
 .block-headline-summary a {
   display: block;
   padding: 0.5em;
 }
 
 /* Block Inset */
-/* line 117, scss/objects/_blocks.scss */
+/* line 188, scss/objects/_blocks.scss */
 .block-inset {
   position: relative;
 }
-/* line 120, scss/objects/_blocks.scss */
+/* line 191, scss/objects/_blocks.scss */
 .block-inset .b-thumb {
   position: relative;
   z-index: 0;
 }
-/* line 124, scss/objects/_blocks.scss */
+/* line 195, scss/objects/_blocks.scss */
 .block-inset .b-thumb img {
   display: block;
 }
 
 /* Hero Block */
-/* line 131, scss/objects/_blocks.scss */
+/* line 202, scss/objects/_blocks.scss */
 .block-inset {
   margin-bottom: 0.5em;
   position: relative;
 }
-/* line 135, scss/objects/_blocks.scss */
+/* line 206, scss/objects/_blocks.scss */
 .block-inset .headline {
   font-size: 1.1em;
 }
-/* line 139, scss/objects/_blocks.scss */
+/* line 210, scss/objects/_blocks.scss */
 .block-inset .b-text {
   position: absolute;
   bottom: 0;
@@ -1436,12 +1528,12 @@ footer a, .footer a {
 }
 
 /* Block Thumb with Summary */
-/* line 152, scss/objects/_blocks.scss */
+/* line 223, scss/objects/_blocks.scss */
 .block-thumb-summary .b-thumb {
   float: left;
   width: 50%;
 }
-/* line 157, scss/objects/_blocks.scss */
+/* line 228, scss/objects/_blocks.scss */
 .block-thumb-summary .b-text {
   margin-left: 50%;
   padding: 0.5em;
