@@ -2,8 +2,8 @@
     $Table
 \*------------------------------------*/
 table {
-	border-collapse: collapse; 
-	border-spacing: 0; 
+	border-collapse: collapse;
+	border-spacing: 0;
 	border: 1px solid $color__base;
 	width: 100%;
 }
@@ -17,12 +17,16 @@ td {
 	padding: 0.2em;
 }
 
+.content-note-container {
+	border: 1px solid $color__highlight;
+	padding: $pad;
+}
 .content-note {
 	font-size: $font-size-large;
 	font-weight: 100;
 	border: none;
 	width: auto;
-	margin: 0 auto;	
+	margin: 0 auto;
 	h3 {
 		font-weight: 300;
 	}

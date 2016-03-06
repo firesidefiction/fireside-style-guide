@@ -217,7 +217,7 @@ body {
 /* Links */
 /* line 2, scss/base/_links.scss */
 a {
-  color: #414141;
+  color: #810024;
   text-decoration: none;
   outline: 0;
   -webkit-transition: color 0.3s ease-in-out;
@@ -494,6 +494,12 @@ td {
 }
 
 /* line 20, scss/base/_tables.scss */
+.content-note-container {
+  border: 1px solid #810024;
+  padding: 1em;
+}
+
+/* line 24, scss/base/_tables.scss */
 .content-note {
   font-size: 1.4375em;
   font-weight: 100;
@@ -501,15 +507,15 @@ td {
   width: auto;
   margin: 0 auto;
 }
-/* line 26, scss/base/_tables.scss */
+/* line 30, scss/base/_tables.scss */
 .content-note h3 {
   font-weight: 300;
 }
-/* line 29, scss/base/_tables.scss */
+/* line 33, scss/base/_tables.scss */
 .content-note td, .content-note th {
   border: none;
 }
-/* line 32, scss/base/_tables.scss */
+/* line 36, scss/base/_tables.scss */
 .content-note .score {
   text-align: right;
   font-size: 1.4375em;
@@ -517,14 +523,14 @@ td {
   line-height: 1.0625em;
 }
 
-/* line 40, scss/base/_tables.scss */
+/* line 44, scss/base/_tables.scss */
 .legend {
   border: 1px solid #8d8d8d;
   font-size: 0.75em;
   font-weight: 400;
   margin: 1.5em auto 2em;
 }
-/* line 45, scss/base/_tables.scss */
+/* line 49, scss/base/_tables.scss */
 .legend .score {
   color: #5a5a5a;
 }
@@ -1037,6 +1043,14 @@ header h1 {
   padding: 0 0 0 1em;
 }
 /* line 101, scss/objects/_nav.scss */
+.sidenav ul a {
+  color: #414141;
+}
+/* line 103, scss/objects/_nav.scss */
+.sidenav ul a:hover {
+  color: #b40032;
+}
+/* line 107, scss/objects/_nav.scss */
 .sidenav ul li {
   padding: 0.5em;
   border-bottom: 1px solid #dadada;
@@ -1046,12 +1060,12 @@ header h1 {
   -o-transition: border-bottom 0.3s ease;
   transition: border-bottom 0.3s ease;
 }
-/* line 105, scss/objects/_nav.scss */
+/* line 111, scss/objects/_nav.scss */
 .sidenav ul li:hover {
   border-bottom: 1px solid #b40032;
 }
 @media all and (min-width: 46.8em) {
-  /* line 101, scss/objects/_nav.scss */
+  /* line 107, scss/objects/_nav.scss */
   .sidenav ul li {
     padding: 1em;
   }
@@ -1064,17 +1078,9 @@ header h1 {
   }
 }
 
-/* line 119, scss/objects/_nav.scss */
+/* line 125, scss/objects/_nav.scss */
 .back-to-top {
   text-align: right;
-}
-/* line 121, scss/objects/_nav.scss */
-.back-to-top a {
-  color: #810024;
-}
-/* line 123, scss/objects/_nav.scss */
-.back-to-top a:hover {
-  color: #b40032;
 }
 
 /*------------------------------------*\
@@ -1287,6 +1293,21 @@ footer a, .footer a {
   color: #fff;
 }
 
+/* line 64, scss/objects/_buttons.scss */
+.donate {
+  display: inline-block;
+  background: #fff;
+  color: #810024;
+  border: none;
+  max-width: 20em;
+  padding: 0;
+  line-height: 0;
+}
+/* line 72, scss/objects/_buttons.scss */
+.donate:hover {
+  background: none;
+}
+
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
 /* line 2, scss/objects/_blocks.scss */
 .brick {
@@ -1423,8 +1444,8 @@ footer a, .footer a {
 /* about us */
 /* line 105, scss/objects/_blocks.scss */
 .about-us {
-  max-width: 55em;
   margin: 1em auto;
+  max-width: 60em;
 }
 @media all and (min-width: 46.8em) {
   /* line 105, scss/objects/_blocks.scss */
@@ -1433,42 +1454,71 @@ footer a, .footer a {
   }
 }
 /* line 111, scss/objects/_blocks.scss */
-.about-us article {
-  max-width: 36em;
+.about-us h2 {
+  margin-bottom: 0.5em;
+}
+/* line 114, scss/objects/_blocks.scss */
+.about-us h3 {
+  margin-bottom: 0.25em;
+}
+/* line 117, scss/objects/_blocks.scss */
+.about-us section {
+  margin-bottom: 1em;
+}
+/* line 120, scss/objects/_blocks.scss */
+.about-us .back-to-top {
+  text-align: right;
+}
+
+/* line 125, scss/objects/_blocks.scss */
+.submissions-status {
   padding: 1em;
-  margin: 0 2em;
+  margin: 1em 0;
+  background: #810024;
+  border-radius: 0.25em;
+  color: #fff;
+}
+/* line 131, scss/objects/_blocks.scss */
+.submissions-status h1 {
+  font-size: 1.8em;
+  color: #fff;
+}
+/* line 135, scss/objects/_blocks.scss */
+.submissions-status a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Block */
-/* line 119, scss/objects/_blocks.scss */
+/* line 142, scss/objects/_blocks.scss */
 .block {
   overflow: hidden;
 }
-/* line 122, scss/objects/_blocks.scss */
+/* line 145, scss/objects/_blocks.scss */
 .block p:last-child {
   margin-bottom: 0;
 }
 
-/* line 127, scss/objects/_blocks.scss */
+/* line 150, scss/objects/_blocks.scss */
 .headline {
   line-height: 1.2;
 }
 
 /* Hero Block */
-/* line 132, scss/objects/_blocks.scss */
+/* line 155, scss/objects/_blocks.scss */
 .block-hero {
   margin-bottom: 0.5em;
 }
-/* line 136, scss/objects/_blocks.scss */
+/* line 159, scss/objects/_blocks.scss */
 .block-hero .b-thumb img {
   display: block;
 }
 @media all and (min-width: 50em) {
-  /* line 132, scss/objects/_blocks.scss */
+  /* line 155, scss/objects/_blocks.scss */
   .block-hero {
     position: relative;
   }
-  /* line 144, scss/objects/_blocks.scss */
+  /* line 167, scss/objects/_blocks.scss */
   .block-hero .b-text {
     position: absolute;
     bottom: 0;
@@ -1481,27 +1531,27 @@ footer a, .footer a {
 }
 
 /* Block Thumbnail with Headline */
-/* line 157, scss/objects/_blocks.scss */
+/* line 180, scss/objects/_blocks.scss */
 .block-thumb {
   display: table;
   width: 100%;
   border-collapse: collapse;
 }
-/* line 162, scss/objects/_blocks.scss */
+/* line 185, scss/objects/_blocks.scss */
 .block-thumb .b-inner {
   display: table-row;
   vertical-align: top;
   overflow: hidden;
 }
 @media all and (min-width: 29.75em) {
-  /* line 168, scss/objects/_blocks.scss */
+  /* line 191, scss/objects/_blocks.scss */
   .block-thumb .b-thumb {
     display: table-cell;
     vertical-align: top;
     width: 30%;
     max-width: 10em;
   }
-  /* line 175, scss/objects/_blocks.scss */
+  /* line 198, scss/objects/_blocks.scss */
   .block-thumb .b-thumb img {
     display: block;
     width: 100%;
@@ -1509,7 +1559,7 @@ footer a, .footer a {
   }
 }
 @media all and (min-width: 29.75em) {
-  /* line 183, scss/objects/_blocks.scss */
+  /* line 206, scss/objects/_blocks.scss */
   .block-thumb .b-text {
     display: table-cell;
     width: 70%;
@@ -1518,38 +1568,38 @@ footer a, .footer a {
 }
 
 /* Block Headline Summary */
-/* line 195, scss/objects/_blocks.scss */
+/* line 218, scss/objects/_blocks.scss */
 .block-headline-summary a {
   display: block;
   padding: 0.5em;
 }
 
 /* Block Inset */
-/* line 202, scss/objects/_blocks.scss */
+/* line 225, scss/objects/_blocks.scss */
 .block-inset {
   position: relative;
 }
-/* line 205, scss/objects/_blocks.scss */
+/* line 228, scss/objects/_blocks.scss */
 .block-inset .b-thumb {
   position: relative;
   z-index: 0;
 }
-/* line 209, scss/objects/_blocks.scss */
+/* line 232, scss/objects/_blocks.scss */
 .block-inset .b-thumb img {
   display: block;
 }
 
 /* Hero Block */
-/* line 216, scss/objects/_blocks.scss */
+/* line 239, scss/objects/_blocks.scss */
 .block-inset {
   margin-bottom: 0.5em;
   position: relative;
 }
-/* line 220, scss/objects/_blocks.scss */
+/* line 243, scss/objects/_blocks.scss */
 .block-inset .headline {
   font-size: 1.1em;
 }
-/* line 224, scss/objects/_blocks.scss */
+/* line 247, scss/objects/_blocks.scss */
 .block-inset .b-text {
   position: absolute;
   bottom: 0;
@@ -1561,12 +1611,12 @@ footer a, .footer a {
 }
 
 /* Block Thumb with Summary */
-/* line 237, scss/objects/_blocks.scss */
+/* line 260, scss/objects/_blocks.scss */
 .block-thumb-summary .b-thumb {
   float: left;
   width: 50%;
 }
-/* line 242, scss/objects/_blocks.scss */
+/* line 265, scss/objects/_blocks.scss */
 .block-thumb-summary .b-text {
   margin-left: 50%;
   padding: 0.5em;
@@ -1756,11 +1806,6 @@ footer a, .footer a {
 }
 
 /* line 1, scss/objects/_sections.scss */
-.section {
-  margin: 0 0 1em;
-}
-
-/* line 5, scss/objects/_sections.scss */
 .section-title {
   margin-bottom: 0.5em;
 }
@@ -1807,6 +1852,13 @@ footer a, .footer a {
 /* line 37, scss/objects/_article.scss */
 .social-share a:hover {
   background: #808080;
+}
+
+/* line 43, scss/objects/_article.scss */
+article {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0.5em;
 }
 
 /* line 2, scss/objects/_comments.scss */

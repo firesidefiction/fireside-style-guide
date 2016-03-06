@@ -103,15 +103,38 @@
 
 /* about us */
 .about-us {
-	max-width: 55em;
 	margin: $space auto;
+	max-width: 60em;
 	@media all and (min-width: $bp-med) {
 		display: flex;
 	}
-	article {
-		max-width: 36em;
-		padding: $pad;
-		margin: 0 $space-double;
+	h2 {
+		margin-bottom: $space-half;
+	}
+	h3 {
+		margin-bottom: $space-quarter;
+	}
+	section {
+		margin-bottom: $space;
+	}
+	.back-to-top {
+		text-align: right;
+	}
+}
+
+.submissions-status {
+	padding: $pad;
+	margin: $space 0;
+	background: $color__highlight;
+	border-radius: $border-radius;
+	color: $white;
+	h1 {
+		font-size: 1.8em;
+		color: $white;
+	}
+	a {
+		color: $white;
+		text-decoration: underline;
 	}
 }
 

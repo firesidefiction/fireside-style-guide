@@ -15,6 +15,10 @@
 			"src" : "../../images/fpo_avatar.svg",
 			"alt" : "Person Name"
 		},
+		"patreon" : {
+			"src" : "../../images/logotype-patreon.png",
+			"alt" : "Donate to Fireside"
+		},
 		"landscape-4x3": {
 			"src": "../../images/fpo_4x3.png",
 			"alt": "4x3 Image"
