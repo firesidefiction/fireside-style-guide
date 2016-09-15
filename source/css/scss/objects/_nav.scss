@@ -1,0 +1,127 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	display: flex;
+	justify-content: center;
+	max-width: 35em;
+	margin: 0 auto;
+
+	li {
+		flex: 1;
+		text-align: center;
+		padding-top: 1em;
+	}
+
+	a {
+		padding: $pad-quarter;
+		text-transform: uppercase;
+		font-weight: 100;
+		color: $color__highlight;
+		&:hover {
+			color: $color__highlight--focus;
+		}
+	}
+
+	&.active {
+	}
+
+	@media all and (min-width: $bp-med) {
+
+		li {
+		}
+
+		a {
+		}
+
+	}
+}
+
+#masthead {
+	a {
+		padding: 0;
+	}
+	#logo-badge {
+		width: 4em;
+		@media all and (min-width: $bp-small-2) {
+			display: none;
+		}
+	}
+	#logo-magazine {
+		width: 12em;
+		display: none;
+		@media all and (min-width: $bp-small-2) {
+			display: inline;
+			top: 0;
+		}
+	}
+	@media all and (min-width: $bp-small-2) {
+		padding-top: 0;
+	}
+}
+
+#logo-badge-footer {
+		width: 4em;
+	}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+
+	li {
+		border-right: 1px solid lighten($color__base--light, 30%);
+		font-weight: 100;
+		&:last-child {
+			border: 0;
+		}
+	}
+	a {
+		padding: $pad;
+		color: $color__highlight;
+		@include transition(background-color, 0.3s, ease);
+		&:hover {
+			color: $color__highlight--focus;
+		}
+	}
+	.current a {
+		color: $color__base--light;
+	}
+}
+
+//Side navigation
+
+.sidenav {
+	max-width: 20em;
+	margin: 0 auto;
+	ul {
+		padding: 0 0 0 $pad;
+		a {
+			color: $color__base--dark;
+			&:hover {
+				color: $color__highlight--focus;
+			}
+		}
+		li {
+			padding: $pad-half;
+			border-bottom: 1px solid lighten($color__base--light, 30%);
+			@include transition(border-bottom,0.3s,ease);
+			&:hover {
+				border-bottom: 1px solid $color__highlight--focus;
+			}
+			@media all and (min-width: $bp-med) {
+				padding: $pad;
+			}
+		}
+	}
+	@media all and (min-width: $bp-med) {
+		max-width: 15em;
+		margin: 0;
+	}
+}
+
+.back-to-top {
+	text-align: right;
+}
