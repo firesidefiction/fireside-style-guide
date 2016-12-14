@@ -99,11 +99,10 @@ To install a specific StarterKit from GitHub type:
     grunt patternlab:loadstarterkit --kit=[starterkit-name]
 
 ### Work with Sass
-To use Sass, you need to install it separately
+To use Sass, you need to install it via npm
 
   ```
-  cd install/location
-  gem install sass
+  npm install grunt-contrib-sass
   ```
 
-Once you've done that, you can just `sass --watch source` after you fire up grunt 
+Once you've done that, add the appropriate tasks to the gruntfile, to include sass job in the patternlab task
