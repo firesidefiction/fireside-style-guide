@@ -13,6 +13,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   /******************************************************
    * PATTERN LAB CONFIGURATION
@@ -64,6 +65,21 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
 
+    sass: {
+    dist: {
+      options: {
+        compass: true
+      },
+      files: [{
+        expand: true,
+        cwd: './source/css/',
+        src: ['*.scss'],
+        dest: './public/css/',
+        ext: '.css'
+      }]
+    }
+  },
+
     /******************************************************
      * COPY TASKS
     ******************************************************/
@@ -87,6 +103,8 @@ module.exports = function (grunt) {
     watch: {
       all: {
         files: [
+          'source/css/scss/**/*.scss',
+          'source/css/*.scss',
           path.resolve(paths().source.css + '**/*.css'),
           path.resolve(paths().source.styleguide + 'css/*.css'),
           path.resolve(paths().source.patterns + '**/*'),
@@ -150,8 +168,8 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['patternlab', 'copy:main']);
-  grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('default', ['patternlab', 'sass', 'copy:main']);
+  grunt.registerTask('patternlab:watch', ['patternlab', 'sass', 'copy:main', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['patternlab', 'sass', 'copy:main', 'browserSync', 'watch:all']);
 
 };
